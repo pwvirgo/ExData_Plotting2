@@ -5,7 +5,7 @@ NEI<-readRDS("exdata-data-NEI_data/summarySCC_PM25.rds")
 SCC <- readRDS("exdata-data-NEI_data/Source_Classification_Code.rds")
 
 ns<-NEI[NEI$fips=="24510",c(1,4,6)]   # city of Balitmore
-ns<-NEI[NEI$fips=="24031",c(1,4,6)]   # montgomery county
+#ns<-NEI[NEI$fips=="24031",c(1,4,6)]   # montgomery county
 
 E99<-sum(ns$year==1999,NEI$Emissions) /1000
 E02<-sum(ns$year==2002,NEI$Emissions) /1000
