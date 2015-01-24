@@ -28,7 +28,7 @@ library(ggplot2)
 qplot(as.factor(pd$Group.1),pd$x/1000, geom="bar", stat="identity",
     main=paste("Total emissions from coal combustion in US",
     			"\ndeclined from 1999-2008"),
-    ylab=expression("1000 of tons of " * PM[2.5]), xlab="Year") +
+    ylab=expression("Kilo-tons of " * PM[2.5]), xlab="Year") +
 	theme(title=element_text(size=rel(1.5)),
 		  axis.text.x=element_text(size=rel(2)))
 

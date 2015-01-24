@@ -7,9 +7,6 @@ setwd("~/a/highEd/dataScience_coursera/ExploreData/data")
 NEI<-readRDS("exdata-data-NEI_data/summarySCC_PM25.rds")
 SCC <- readRDS("exdata-data-NEI_data/Source_Classification_Code.rds")
 
-
-nei<-NEI[NEI$fips=="24510",c("SCC","year")]
-
 wanted<-function(text) {  grepl("Highway Veh", text, ignore.case="T") }
 
 # create a locical vector of wanted SCC rows 
